@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Cunha – Presença em Google e IAs</title>
+  <meta name="description" content="Como estruturamos a presença digital da Cunha Projetos e Segurança para ser referência em AVCB/CLCB no Google, Maps, site e principais IAs." />
+
+  <!-- Google Fonts: League Spartan (títulos) + Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cunha: {
+              100: '#DCE9E1',
+              400: '#49A36C',
+              700: '#1E5128',
+              900: '#14381D',
+            },
+            neutralcustom: {
+              900: '#161616',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+            heading: ['League Spartan', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 18px 40px rgba(0,0,0,0.2)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="scroll-smooth bg-cunha-100 text-neutralcustom-900 font-sans antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 border-b border-cunha-700/30 bg-cunha-900/95 backdrop-blur">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-14 items-center justify-between">
+          <!-- Marca -->
+          <a href="#topo" class="flex items-center gap-3">
+            <div class="h-8 w-8 rounded-lg overflow-hidden bg-white border border-cunha-700/50">
+              <img
+                src="https://i.imgur.com/ynwb7Kl.png"
+                alt="Logo Cunha Projetos e Segurança"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div class="leading-tight">
+              <span class="text-[12px] font-heading tracking-tight text-white">
+                CUNHA Projetos e Segurança
+              </span>
+              <span class="block text-[11px] text-cunha-100/80">
+                Case: Google, Maps, Site &amp; IAs
+              </span>
+            </div>
+          </a>
+
+          <!-- Nav desktop -->
+          <nav class="hidden md:flex items-center gap-5 text-[12px] text-cunha-100/90">
+            <a href="#inicio" class="hover:text-white transition-colors">Visão geral</a>
+            <a href="#metodo" class="hover:text-white transition-colors">O que fizemos</a>
+            <a href="#resultados" class="hover:text-white transition-colors">Resultados</a>
+            <a href="#estrategista" class="hover:text-white transition-colors">Estrategista</a>
+          </nav>
+
+          <!-- CTA desktop -->
+          <div class="hidden md:flex">
+            <a
+              href="#resultados"
+              class="inline-flex items-center gap-2 rounded-full bg-cunha-400 px-4 py-1.5 text-[12px] font-semibold text-neutralcustom-900 shadow-soft hover:bg-emerald-400 transition-colors"
+            >
+              <span>Ver evidências</span>
+              <i data-feather="arrow-right" class="h-3 w-3"></i>
+            </a>
+          </div>
+
+          <!-- Menu mobile -->
+          <button
+            id="mobile-menu-button"
+            type="button"
+            class="inline-flex items-center justify-center rounded-md p-1.5 text-cunha-100 hover:bg-cunha-700/40 md:hidden"
+            aria-label="Abrir menu"
+          >
+            <i data-feather="menu" class="h-4 w-4"></i>
+          </button>
+        </div>
+
+        <!-- Nav mobile -->
+        <nav id="mobile-menu" class="md:hidden hidden border-t border-cunha-700/40 pb-3">
+          <div class="flex flex-col gap-1 pt-2 text-sm text-cunha-100">
+            <a href="#inicio" class="rounded-lg px-2 py-1.5 hover:bg-cunha-700/40">Visão geral</a>
+            <a href="#metodo" class="rounded-lg px-2 py-1.5 hover:bg-cunha-700/40">O que fizemos</a>
+            <a href="#resultados" class="rounded-lg px-2 py-1.5 hover:bg-cunha-700/40">Resultados</a>
+            <a href="#estrategista" class="rounded-lg px-2 py-1.5 hover:bg-cunha-700/40">Estrategista</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="topo" class="flex-1">
+
+      <!-- HERO RESUMIDO -->
+      <section
+        id="inicio"
+        aria-labelledby="hero-title"
+        class="border-b border-cunha-700/30 bg-cunha-900 text-white"
+      >
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
+          <div class="grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start">
+            <!-- Texto -->
+            <div class="space-y-5">
+              <p class="inline-flex items-center gap-2 rounded-full bg-cunha-700/80 px-3 py-1 text-[11px] font-medium tracking-wide">
+                <span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-cunha-400/20">
+                  <i data-feather="shield" class="h-3 w-3"></i>
+                </span>
+                <span>AVCB/CLCB • São Paulo • Case real</span>
+              </p>
+
+              <h1 id="hero-title" class="font-heading text-3xl sm:text-4xl tracking-tight">
+                De invisível a referência em AVCB/CLCB no Google e nas principais IAs
+              </h1>
+
+              <p class="text-sm sm:text-[15px] text-cunha-100/95 max-w-xl">
+                Como estruturamos a Cunha Projetos e Segurança para aparecer como resposta confiável no Google, no Maps, no site e em IAs como Gemini, Copilot e ChatGPT.
+              </p>
+
+              <ul class="grid gap-2 text-[13px] sm:text-sm text-cunha-100/90 max-w-xl">
+                <li class="flex gap-2">
+                  <i data-feather="target" class="h-3.5 w-3.5 text-cunha-400 mt-[2px]"></i>
+                  <span>Posicionamento claro: AVCB/CLCB em São Paulo.</span>
+                </li>
+                <li class="flex gap-2">
+                  <i data-feather="map-pin" class="h-3.5 w-3.5 text-cunha-400 mt-[2px]"></i>
+                  <span>Google Perfil, Maps e site dizendo a mesma história.</span>
+                </li>
+                <li class="flex gap-2">
+                  <i data-feather="cpu" class="h-3.5 w-3.5 text-cunha-400 mt-[2px]"></i>
+                  <span>IAs reconhecendo a Cunha como referência no tema.</span>
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-3 items-center">
+                <a
+                  href="#resultados"
+                  class="inline-flex items-center gap-2 rounded-full bg-cunha-400 px-5 py-2 text-[13px] font-semibold text-neutralcustom-900 shadow-soft hover:bg-emerald-400 transition-colors"
+                >
+                  <span>Ir direto aos resultados</span>
+                  <i data-feather="arrow-down" class="h-4 w-4"></i>
+                </a>
+                <p class="text-[11px] text-cunha-100/80 max-w-xs">
+                  Tudo o que está neste case pode ser conferido por você, em tempo real, no Google, Maps e IAs.
+                </p>
+              </div>
+            </div>
+
+            <!-- Cartão curto de contexto -->
+            <aside class="rounded-2xl bg-white text-neutralcustom-900 border border-cunha-700/20 p-5 shadow-soft">
+              <p class="text-[11px] uppercase tracking-wide text-cunha-700 mb-2">
+                Ponto de partida
+              </p>
+              <ul class="space-y-2 text-[13px]">
+                <li>• Sem identidade digital clara ligada a AVCB/CLCB.</li>
+                <li>• Sem site otimizado e ficha trabalhada no Google Perfil / Maps.</li>
+                <li>• Sem conteúdo baseado nas dúvidas reais dos clientes.</li>
+                <li>• Sem estratégia para aparecer nas IAs.</li>
+              </ul>
+              <p class="mt-3 text-[13px] text-neutralcustom-900/85">
+                Objetivo: construir uma base digital sólida para que a Cunha fosse encontrada e reconhecida como especialista em AVCB/CLCB.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- O QUE FOI FEITO (RESUMO EM 3 BLOCOS) -->
+      <section
+        id="metodo"
+        aria-labelledby="metodo-title"
+        class="border-b border-cunha-700/30 bg-white"
+      >
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10">
+          <div class="flex items-baseline justify-between gap-4 mb-6">
+            <h2 id="metodo-title" class="font-heading text-xl sm:text-2xl text-cunha-900">
+              O que fizemos para organizar a presença da Cunha
+            </h2>
+            <p class="hidden sm:block text-[12px] text-neutralcustom-900/70">
+              Do zero à referência, em etapas simples.
+            </p>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-3">
+            <!-- Bloco 1 -->
+            <article class="rounded-2xl border border-cunha-700/20 bg-cunha-100/70 p-4">
+              <p class="text-[11px] uppercase tracking-wide text-cunha-700 mb-1">1. Fundamentos</p>
+              <p class="text-[13px] text-neutralcustom-900/90 mb-2">
+                Organização do projeto em um Drive próprio da Cunha:
+              </p>
+              <p class="font-mono text-[11px] bg-white/70 border border-cunha-700/20 rounded px-2 py-1 mb-2">
+                00_Gestão, 10_Posicionamento, 20_Fundamentos, 30_Brand, 40_Copy, 60_Web, 70_SEO_Local
+              </p>
+              <p class="text-[13px] text-neutralcustom-900/85">
+                Tudo acessível para qualquer profissional que entre no projeto, sem depender de “arquivos perdidos”.
+              </p>
+            </article>
+
+            <!-- Bloco 2 -->
+            <article class="rounded-2xl border border-cunha-700/20 bg-cunha-100/70 p-4">
+              <p class="text-[11px] uppercase tracking-wide text-cunha-700 mb-1">2. Marca &amp; mensagem</p>
+              <ul class="space-y-1.5 text-[13px] text-neutralcustom-900">
+                <li>• Público definido: empresas, condomínios e negócios que precisam de AVCB/CLCB em SP.</li>
+                <li>• Tom técnico, seguro e orientador (sem promessas milagrosas).</li>
+                <li>• Foco em: conformidade com o Corpo de Bombeiros, redução de risco e multa, prazos corretos.</li>
+              </ul>
+            </article>
+
+            <!-- Bloco 3 -->
+            <article class="rounded-2xl border border-cunha-700/20 bg-cunha-100/70 p-4">
+              <p class="text-[11px] uppercase tracking-wide text-cunha-700 mb-1">3. Google, Maps &amp; Site</p>
+              <ul class="space-y-1.5 text-[13px] text-neutralcustom-900">
+                <li>• Ficha “Cunha Projetos e Segurança” criada e otimizada no Google Perfil.</li>
+                <li>• Perguntas &amp; Respostas sobre vistoria, renovação e reprovação.</li>
+                <li>• Site <span class="underline decoration-cunha-400 underline-offset-4">cunhaavcb.com.br</span> estruturado em torno das dúvidas do cliente.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTADOS (GOOGLE + IAS) -->
+      <section
+        id="resultados"
+        aria-labelledby="resultados-title"
+        class="border-b border-cunha-700/30 bg-cunha-100/80"
+      >
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10">
+          <div class="flex items-baseline justify-between gap-4 mb-6">
+            <h2 id="resultados-title" class="font-heading text-xl sm:text-2xl text-cunha-900">
+              O que mudou em até 30 dias
+            </h2>
+            <p class="hidden sm:block text-[12px] text-neutralcustom-900/70">
+              Resultados que você consegue validar em poucos minutos.
+            </p>
+          </div>
+
+          <div class="grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
+            <!-- Google & Site -->
+            <article class="rounded-2xl bg-white border border-cunha-700/20 p-5 shadow-sm">
+              <p class="text-[11px] uppercase tracking-wide text-cunha-700 mb-1">Google &amp; Maps</p>
+              <ul class="space-y-2 text-[13px] text-neutralcustom-900">
+                <li>• Ficha da Cunha em destaque no painel lateral da busca.</li>
+                <li>• Endereço, telefone, horário e rota claros e padronizados.</li>
+                <li>• Mais de <span class="font-semibold text-cunha-700">137 visualizações</span> em pouco tempo, mostrando que os clientes passaram a encontrar a empresa no Google e Maps.</li>
+                <li>• Site com título e descrição alinhados a AVCB/CLCB em São Paulo.</li>
+              </ul>
+              <p class="mt-3 text-[13px] text-neutralcustom-900/85">
+                Hoje, quem pesquisa pela Cunha encontra uma empresa organizada, confiável e com caminho direto para contato.
+              </p>
+            </article>
+
+            <!-- IAs + teste rápido (versão destacada) -->
+            <article class="rounded-2xl bg-gradient-to-b from-white to-cunha-100/80 border-2 border-cunha-400/70 p-5 shadow-soft">
+              <div class="flex items-center justify-between gap-3 mb-3">
+                <div>
+                  <p class="text-[11px] uppercase tracking-wide text-cunha-700 mb-1">Principais IAs na prática</p>
+                  <p class="text-[13px] text-neutralcustom-900/90">
+                    Depois da organização digital, as IAs passaram a sugerir a Cunha como referência em AVCB/CLCB em São Paulo.
+                  </p>
+                </div>
+                <div class="hidden sm:flex gap-1">
+                  <span class="px-2 py-1 rounded-full bg-cunha-400/15 text-[10px] font-medium text-cunha-900">Gemini</span>
+                  <span class="px-2 py-1 rounded-full bg-cunha-400/15 text-[10px] font-medium text-cunha-900">Copilot</span>
+                  <span class="px-2 py-1 rounded-full bg-cunha-400/15 text-[10px] font-medium text-cunha-900">ChatGPT</span>
+                </div>
+              </div>
+
+              <ul class="space-y-1.5 text-[13px] text-neutralcustom-900 mb-4">
+                <li>• <strong>Gemini</strong>: Cunha entre os primeiros resultados.</li>
+                <li>• <strong>Copilot</strong>: Cunha como 1º resultado sugerido.</li>
+                <li>• <strong>ChatGPT</strong>: Cunha como 1º resultado em consultas sobre AVCB/CLCB em SP.</li>
+              </ul>
+
+              <p class="text-[12px] text-neutralcustom-900/80 mb-3">
+                Quer ver com seus próprios olhos? Use a sua conta e abra os exemplos abaixo:
+              </p>
+
+              <div class="flex flex-col gap-2 text-[12px]">
+                <!-- Botão Gemini -->
+                <a
+                  href="https://share.google/aimode/5KVtykoJq5uvMCrg6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-between rounded-full bg-cunha-400 px-4 py-2 font-semibold text-neutralcustom-900 hover:bg-emerald-400 transition-colors"
+                >
+                  <span class="flex items-center gap-2">
+                    <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/70 text-[11px] font-bold">
+                      G
+                    </span>
+                    <span>Ver exemplo no Gemini</span>
+                  </span>
+                  <i data-feather="external-link" class="h-4 w-4"></i>
+                </a>
+
+                <!-- Botão Copilot -->
+                <a
+                  href="https://copilot.microsoft.com/shares/sQfAuANzzjSzJM9U2RbiJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-between rounded-full bg-white px-4 py-2 font-semibold text-cunha-900 border border-cunha-700/40 hover:bg-cunha-100 transition-colors"
+                >
+                  <span class="flex items-center gap-2">
+                    <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-cunha-100 text-[11px] font-bold">
+                      C
+                    </span>
+                    <span>Ver exemplo no Copilot</span>
+                  </span>
+                  <i data-feather="external-link" class="h-4 w-4"></i>
+                </a>
+
+                <!-- Botão ChatGPT -->
+                <a
+                  href="https://chatgpt.com/share/692ade72-d418-8006-a0cb-071f06f8b4f2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-between rounded-full bg-white px-4 py-2 font-semibold text-cunha-900 border border-cunha-700/40 hover:bg-cunha-100 transition-colors"
+                >
+                  <span class="flex items-center gap-2">
+                    <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-cunha-100 text-[11px] font-bold">
+                      GPT
+                    </span>
+                    <span>Ver exemplo no ChatGPT</span>
+                  </span>
+                  <i data-feather="external-link" class="h-4 w-4"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Por que isso importa (1 bloco curto) -->
+          <div class="mt-8 rounded-2xl bg-white border border-cunha-700/20 p-5 shadow-sm">
+            <p class="text-[11px] uppercase tracking-wide text-cunha-700 mb-1">
+              Por que isso importa para o negócio
+            </p>
+            <ul class="space-y-2 text-[13px] text-neutralcustom-900">
+              <li>• O cliente vê a Cunha como fonte confiável antes mesmo de falar com a empresa.</li>
+              <li>• Google e IAs passam a se apoiar em informações oficiais, não em terceiros.</li>
+              <li>• As oportunidades que chegam são mais qualificadas e com menos dúvida básica.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ESTRATEGISTA -->
+      <section
+        id="estrategista"
+        aria-labelledby="estrategista-title"
+        class="bg-white"
+      >
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+          <h2 id="estrategista-title" class="font-heading text-xl sm:text-2xl text-cunha-900 mb-5">
+            Quem estruturou este projeto
+          </h2>
+
+          <div class="rounded-2xl bg-cunha-100/80 border border-cunha-700/30 p-5 sm:p-6 flex flex-col sm:flex-row gap-5 sm:gap-6">
+            <div class="flex-shrink-0">
+              <div class="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl overflow-hidden bg-white border border-cunha-700/40">
+                <img
+                  src="https://i.imgur.com/44UOFpP.jpeg"
+                  alt="Foto de Franklin Barbosa dos Santos"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="space-y-3 text-[13px] sm:text-sm text-neutralcustom-900">
+              <div>
+                <p class="font-heading text-[15px] text-cunha-900">
+                  Franklin Barbosa dos Santos
+                </p>
+                <p class="text-[11px] text-neutralcustom-900/70">
+                  Estrategista em Marketing Digital e Especialista em SEO
+                </p>
+              </div>
+              <p>
+                18 anos atuando com marketing digital e posicionamento de marcas, com foco em negócios locais e serviços técnicos.
+              </p>
+              <p>
+                Responsável por organizar fundamentos, site, SEO local, Google Maps e a presença da Cunha nas principais IAs do mercado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cunha-900 text-cunha-100 border-t border-cunha-700/60">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 space-y-4">
+        <!-- Linha 1: info do projeto -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-[11px] sm:text-[12px]">
+          <div class="flex items-center gap-2">
+            <i data-feather="clock" class="h-3.5 w-3.5"></i>
+            <p>
+              Projeto iniciado em <span class="font-medium">3 de out. de 2025, às 10h09</span> • Case público de presença digital em Google &amp; IAs.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-x-3 gap-y-1 text-cunha-100/85">
+            <span>AVCB/CLCB</span>
+            <span>SEO Local</span>
+            <span>Google Maps</span>
+            <span>IAs (Gemini, Copilot, ChatGPT)</span>
+          </div>
+        </div>
+
+        <!-- Linha 2: direitos / crédito -->
+        <div class="border-t border-cunha-700/60 pt-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-[11px] text-cunha-100/80">
+          <p>© <span id="ano-atual"></span> Cunha Projetos e Segurança. Todos os direitos reservados.</p>
+          <p>Case estruturado por Franklin Barbosa dos Santos.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.feather) {
+        feather.replace();
+      }
+
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a[href^="#"]').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      const anoSpan = document.getElementById('ano-atual');
+      if (anoSpan) {
+        anoSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+</body>
+</html>
